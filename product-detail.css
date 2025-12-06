@@ -15,6 +15,7 @@
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
     padding: 20px;
+    overflow-y: auto;
 }
 
 .product-detail-overlay {
@@ -43,6 +44,7 @@
         opacity: 0;
         transform: scale(0.9) translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: scale(1) translateY(0);
@@ -89,6 +91,7 @@
     padding: 40px;
     max-height: calc(95vh - 120px);
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .product-header {
@@ -276,16 +279,16 @@
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .product-image-section {
         position: relative;
         top: 0;
     }
-    
+
     .product-detail-content {
         padding: 30px;
     }
-    
+
     .product-name {
         font-size: 2rem;
     }
@@ -294,30 +297,45 @@
 @media (max-width: 768px) {
     .product-detail-page {
         padding: 10px;
+        align-items: flex-start;
     }
-    
+
+    .product-detail-container {
+        margin-top: 10px;
+    }
+
     .product-detail-content {
         padding: 20px;
+        max-height: calc(95vh - 100px);
     }
-    
+
     .product-detail-header {
         padding: 20px;
     }
-    
+
     .product-name {
         font-size: 1.8rem;
     }
-    
+
     .product-subtitle {
         font-size: 1rem;
     }
-    
+
     .product-cta {
         flex-direction: column;
     }
-    
+
+    .btn {
+        width: 100%;
+        min-height: 48px;
+    }
+
     .back-button span {
         display: none;
+    }
+
+    .close-button {
+        padding: 10px;
     }
 }
 
@@ -326,21 +344,57 @@
         border-radius: 15px;
         max-height: 98vh;
     }
-    
+
     .product-detail-content {
         padding: 15px;
     }
-    
+
+    .product-detail-header {
+        padding: 15px;
+    }
+
     .product-name {
         font-size: 1.6rem;
     }
-    
+
+    .product-subtitle {
+        font-size: 0.95rem;
+    }
+
     .spec-table {
         font-size: 0.8rem;
     }
-    
+
     .spec-table th,
     .spec-table td {
-        padding: 8px;
+        padding: 8px 6px;
+    }
+
+    .product-image-container {
+        padding: 20px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra small devices for product detail */
+@media (max-width: 375px) {
+    .product-detail-content {
+        padding: 12px;
+    }
+
+    .product-name {
+        font-size: 1.5rem;
+    }
+
+    .product-header {
+        margin-bottom: 30px;
+    }
+
+    .product-info-section {
+        gap: 25px;
     }
 }
