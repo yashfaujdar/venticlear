@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{PRODUCT_DESCRIPTION}} - Venticlear Air Filtration Solutions">
+    <title>{{PRODUCT_NAME}} | Venticlear Air Filtration Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon1.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="VENTICLEAR black.png" alt="Venticlear Logo">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="index.html#download" class="nav-link">Download</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Page -->
+    <div class="product-detail-page">
+        <div class="product-detail-overlay"></div>
+        <div class="product-detail-container">
+            <div class="product-detail-header">
+                <button class="back-button" onclick="window.history.back()">
+                    <i class="fas fa-arrow-left"></i> Back to Products
+                </button>
+                <button class="close-button" onclick="window.location.href='products.html'">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="product-detail-content">
+                <div class="product-header">
+                    <h1 class="product-name">{{PRODUCT_NAME}}</h1>
+                    <p class="product-subtitle">{{PRODUCT_SUBTITLE}}</p>
+                </div>
+                
+                <div class="product-main">
+                    <div class="product-image-section">
+                        <div class="product-image-container">
+                            <img id="productImage" src="{{PRODUCT_IMAGE}}" alt="{{PRODUCT_NAME}}" class="product-image">
+                        </div>
+                    </div>
+                    
+                    <div class="product-info-section">
+                        <div class="product-description">
+                            <h3>Product Overview</h3>
+                            <p>{{PRODUCT_DESCRIPTION_FULL}}</p>
+                        </div>
+                        
+                        <div class="product-specifications">
+                            <h3>Technical Specifications</h3>
+                            <div id="specificationsContent">
+                                {{SPECIFICATIONS_TABLE}}
+                            </div>
+                        </div>
+                        
+                        <div class="product-features">
+                            <h3>Key Features</h3>
+                            <ul id="featuresList">
+                                {{FEATURES_LIST}}
+                            </ul>
+                        </div>
+                        
+                        <div class="product-applications">
+                            <h3>Applications</h3>
+                            <p>{{APPLICATIONS_TEXT}}</p>
+                        </div>
+                        
+                        <div class="product-cta">
+                            <a href="index.html#contact" class="btn btn-primary">Get Quote</a>
+                            <a href="venticlear brochure.pdf" download class="btn btn-secondary">Download Brochure</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="VENTICLEAR black.png" alt="Venticlear Logo">
+                    </div>
+                    <p class="footer-tagline">Excellence in Every Breath.</p>
+                    <p class="footer-company">Venticlear Pvt. Ltd.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#download">Download</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="pre-filter.html">Pre Filters</a></li>
+                        <li><a href="fine-filter.html">Fine Filters</a></li>
+                        <li><a href="hepa-filter.html">HEPA Filters</a></li>
+                        <li><a href="bag-filter.html">Bag Filters</a></li>
+                        <li><a href="bibo-system.html">BIBO Systems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> aashishdubey@venticlear.com</li>
+                        <li><i class="fas fa-phone"></i> +91-7011881821</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh</li>
+                        <li><a href="https://wa.me/917011881821" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Venticlear Pvt. Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

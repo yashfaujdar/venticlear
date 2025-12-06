@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Disallow access to specific files
+Disallow: /README.md
+Disallow: /images/README.md
