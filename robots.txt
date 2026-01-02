@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://venticlear.com/sitemap.xml
 
 # Disallow access to specific files
 Disallow: /README.md
